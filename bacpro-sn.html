@@ -1,123 +1,121 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-    <head>
-        <title>Bac Pro | Nohan HA-HONG-LAC</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-            /* --- CONFIGURATION DYNASTIE --- */
-            :root {
-                --gold: #D4AF37;
-                --deep-black: #0a0a0a;
-                --soft-white: #e0e0e0;
-            }
+	<head>
+		<title>Bac Pro SN | Nohan HA-HONG-LAC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* --- STYLE DYNASTIE --- */
+			:root {
+				--gold: #D4AF37;
+				--deep-black: #0a0a0a;
+			}
 
-            body { 
-                background: radial-gradient(circle at top right, #1a1a1a, #050505);
-                font-family: 'Georgia', serif !important; 
-                color: var(--soft-white);
-            }
+			body { 
+				background: radial-gradient(circle at top right, #1a1a1a, #050505) !important;
+				color: #e0e0e0 !important;
+				font-family: 'Georgia', serif !important;
+			}
 
-            #header { 
-                background-color: var(--deep-black) !important; 
-                border-right: 1px solid var(--gold);
-                box-shadow: 5px 0 25px rgba(0,0,0,0.7);
-                text-align: center;
-            }
+			#header { 
+				background-color: var(--deep-black) !important; 
+				border-right: 1px solid var(--gold) !important;
+				text-align: center;
+			}
 
-            h1 strong { 
-                color: var(--gold) !important; 
-                text-transform: uppercase; 
-                letter-spacing: 4px; 
-                font-size: 1.2em;
-                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            }
+			h1 strong { color: var(--gold) !important; text-transform: uppercase; letter-spacing: 3px; }
 
-            .image.avatar { 
-                border: 1px solid var(--gold); 
-                padding: 4px; 
-                transition: transform 0.5s ease;
-                background: none;
-            }
+			.image.avatar { 
+				display: inline-block !important;
+				width: 150px !important; 
+				height: 150px !important; 
+				border-radius: 50% !important; 
+				border: 2px solid var(--gold) !important;
+				overflow: hidden !important; 
+				padding: 0 !important;
+			}
 
-            .image.avatar:hover { transform: scale(1.05) rotate(2deg); }
+			.image.avatar img {
+				width: 100% !important;
+				height: 100% !important;
+				object-fit: cover !important;
+				border-radius: 50% !important;
+			}
 
-            nav ul { list-style: none; padding: 0; margin-top: 2.5em; }
-            nav ul li { margin-bottom: 15px; }
+			#nav ul { list-style: none !important; padding: 0 !important; margin-top: 2em !important; }
+			#nav ul li { padding: 0 !important; }
 
-            .button.fit { 
-                background: rgba(212, 175, 55, 0.05) !important; 
-                border: 1px solid rgba(212, 175, 55, 0.3) !important; 
-                color: var(--gold) !important; 
-                text-transform: uppercase; 
-                letter-spacing: 2px;
-                font-size: 0.75em !important;
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                border-radius: 0; 
-            }
+			.button.fit { 
+				background: rgba(212, 175, 55, 0.05) !important; 
+				border: 1px solid rgba(212, 175, 55, 0.3) !important; 
+				color: var(--gold) !important; 
+				margin-bottom: 12px;
+				text-transform: uppercase;
+			}
 
-            .button.fit:hover { 
-                border-color: var(--gold) !important;
-                background: var(--gold) !important;
-                color: #000 !important;
-                box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-                transform: translateY(-2px);
-            }
+			.button.fit:hover { background: var(--gold) !important; color: #000 !important; }
 
-            h2 { 
-                color: var(--gold); 
-                border-bottom: 2px solid var(--gold); 
-                display: inline-block;
-                padding-bottom: 5px;
-                margin-bottom: 1.5em;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
+			h2 { color: var(--gold) !important; border-bottom: 2px solid var(--gold) !important; text-transform: uppercase; }
+			strong { color: var(--gold) !important; }
+			.lang-badge { color: var(--gold); border: 1px solid var(--gold); padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-right: 5px; }
+		</style>
+	</head>
+	<body class="is-preload">
 
-            #main { padding: 5em; }
-            strong { color: var(--gold); }
-            
-            section {
-                animation: fadeIn 1.2s ease-out;
-            }
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Portrait" /></a>
+				<h1><strong>Nohan HA-HONG-LAC</strong></h1>
+				<p style="color: var(--gold); font-style: italic;">Fondations : Bac Pro SN</p>
+				
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html" class="button fit">Accueil</a></li>
+						<li><a href="cv.html" class="button fit">Parcours & CV</a></li>
+						<li><a href="bts-sisr.html" class="button fit">Missions SISR</a></li>
+						<li><a href="contexte-bts.html" class="button fit">Infrastructure NovaTech</a></li>
+						<li><a href="veille.html" class="button fit">Veille Cyber</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-            @keyframes fadeIn {
-                from { opacity: 0; transform: translateY(10px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        </style>
-    </head>
-    <body class="is-preload">
-        <header id="header">
-            <div class="inner">
-                <a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Nohan" /></a>
-                <h1><strong>Nohan HA-HONG-LAC</strong></h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="button fit">Accueil</a></li>
-                        <li><a href="cv.html" class="button fit">Parcours & CV</a></li>
-                        <li><a href="bts-sisr.html" class="button fit">Missions SISR</a></li>
-                        <li><a href="contexte-bts.html" class="button fit">Infrastructure NovaTech</a></li>
-                        <li><a href="veille.html" class="button fit">Veille Cyber</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+		<div id="main">
+			<section id="one">
+				<h2>Origines du Parcours</h2>
+				<p>Mon cursus a débuté par un <strong>Bac Pro SN (Systèmes Numériques)</strong> au <strong>Lycée Pierre Poivre</strong>. Cette formation m'a permis d'acquérir des bases solides en informatique, allant de la maintenance matérielle à la configuration de services réseaux fondamentaux.</p>
+			</section>
 
-        <div id="main">
-            <section>
-                <header class="major">
-                    <h2>Fondations Bac Pro SN</h2>
-                </header>
-                <h3 style="color: var(--gold);">Stage Erasmus+ en Allemagne</h3>
-                <p>Ma formation a été marquée par une expérience internationale de 4 semaines axée sur :</p>
-                <ul>
-                    <li><strong>Hardware :</strong> Diagnostic et réparation de matériel informatique.</li>
-                    <li><strong>Réseau :</strong> Déploiement de postes de travail en environnement professionnel.</li>
-                    <li><strong>Adaptabilité :</strong> Travail en autonomie dans un contexte interculturel.</li>
-                </ul>
-            </section>
-        </div>
-    </body>
+			<section id="two">
+				<h2>Expérience Internationale : Erasmus+</h2>
+				<div class="row">
+					<article class="col-12 work-item">
+						<h3 style="color: var(--gold);">Stage en Allemagne - Gelsenkirchen</h3>
+						<p>J'ai réalisé une immersion professionnelle au sein de la boutique <strong>Maxi-Median-Shop</strong> à Gelsenkirchen. Cette expérience européenne a été un levier majeur pour mon autonomie.</p>
+						<ul>
+							<li><span class="lang-badge">Anglais</span> Communication technique et relationnelle principale durant le stage.</li>
+							<li><span class="lang-badge">Allemand</span> Apprentissage et utilisation des formules de politesse pour l'accueil client.</li>
+							<li>Diagnostic, maintenance et optimisation de systèmes informatiques clients.</li>
+							<li>Adaptation rapide à un environnement de travail étranger et aux standards allemands.</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section id="three">
+				<h2>Expertise Pierre Poivre</h2>
+				<p>Les périodes de formation en entreprise effectuées au <strong>Lycée Pierre Poivre</strong> m'ont permis de consolider mon savoir-faire technique localement avant de viser l'excellence internationale et la spécialisation en <strong>BTS SIO</strong>.</p>
+			</section>
+		</div>
+
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright"><li>&copy; Nohan HA-HONG-LAC | Excellence Professionnelle</li></ul>
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
